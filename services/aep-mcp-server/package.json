@@ -5,11 +5,11 @@
   "type": "module",
   "description": "Streamable-HTTP MCP server wrapping aep-api's issue/dispatch REST endpoints, so external agents (e.g. the OpenChoreo SRE/RCA agent) can file GitHub issues and dispatch the coding agent. See AE-HANDOFF-DESIGN.md in openchoreo/agents/sre-agent.",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "tsx --test \"src/**/*.test.ts\"",
-    "dev": "tsx watch src/main.ts",
-    "start": "node dist/main.js"
+    "dev": "node init && tsx watch src/main.ts",
+    "start": "node init && node dist/main.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.24.0",

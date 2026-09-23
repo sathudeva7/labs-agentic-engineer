@@ -16,13 +16,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint .",
     "test": "tsx --test \"test/**/*.test.ts\"",
     "record": "tsx src/cli.ts record",
     "serve": "tsx src/cli.ts serve",
-    "dev": "echo \"@aep/sse-cassette: no dev server\""
+    "dev": "node init && echo \"@aep/sse-cassette: no dev server\""
   },
   "dependencies": {
     "zod": "^4.3.6"

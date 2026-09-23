@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "tsx src/oneshot.ts",
-    "build": "tsc",
+    "start": "node init && tsx src/oneshot.ts",
+    "build": "node init && tsc",
     "gen": "openapi-typescript ../../packages/contracts/api/v1/openapi.yaml -o src/generated/aep-api.d.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src",

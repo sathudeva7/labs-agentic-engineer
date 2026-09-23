@@ -2,14 +2,14 @@
   "name": "aep",
   "version": "0.0.0",
   "private": true,
-  "description": "Agentic Engineer Platform — polyglot monorepo (root).",
+  "description": "Agentic Engineer Platform \u2014 polyglot monorepo (root).",
   "packageManager": "pnpm@10.12.1",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
+    "build": "node init && turbo run build",
+    "dev": "node init && turbo run dev",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",

@@ -16,12 +16,12 @@
     "./conversation/load-workspace": "./src/conversation/load-workspace.ts"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint .",
     "test": "tsx --test \"test/**/*.test.ts\"",
-    "dev": "tsx watch src/main.ts",
-    "start": "tsx src/main.ts"
+    "dev": "node init && tsx watch src/main.ts",
+    "start": "node init && tsx src/main.ts"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^4.0.0",

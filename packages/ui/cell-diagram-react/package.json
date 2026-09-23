@@ -20,9 +20,9 @@
     "*.css"
   ],
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "typecheck": "tsc --noEmit",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "node init && tsc -p tsconfig.build.json",
     "test": "vitest run",
     "lint": "eslint ."
   },

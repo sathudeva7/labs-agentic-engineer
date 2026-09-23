@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "description": "Shared collab-document plumbing (#86): the spec-room Y.Doc model (Y.Map path→Y.Text + Y.XmlFragment per md file), headless markdown ↔ ProseMirror conversion, and safe edit application (Y.Text diff-and-patch, fragment reparse). Used by services/collab (seeding/committer) and services/agents (agents as live peers).",
+  "description": "Shared collab-document plumbing (#86): the spec-room Y.Doc model (Y.Map path\u2192Y.Text + Y.XmlFragment per md file), headless markdown \u2194 ProseMirror conversion, and safe edit application (Y.Text diff-and-patch, fragment reparse). Used by services/collab (seeding/committer) and services/agents (agents as live peers).",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -16,11 +16,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint .",
     "test": "tsx --test \"test/**/*.test.ts\"",
-    "dev": "echo \"@aep/collab-doc: no dev server\""
+    "dev": "node init && echo \"@aep/collab-doc: no dev server\""
   },
   "dependencies": {
     "@tiptap/core": "^3.27.2",

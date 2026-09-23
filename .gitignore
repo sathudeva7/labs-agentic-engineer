@@ -27,8 +27,6 @@ generated/
 !services/aep-api/internal/clients/openchoreo/gen/*.gen.go
 
 # Env / secrets
-.env
-.env.*
 !.env.example
 
 # Dev playground threads (services/agents/playground)
@@ -106,3 +104,4 @@ deployments/scripts/setup-local
 
 # Ballerina eval sweeps: scratch packages, transcripts and reports (on-demand, never CI)
 evals/ballerina/.runs/
+config.bat
